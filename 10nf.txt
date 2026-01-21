@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BrightReads — Help</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="brand">BrightReads</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="cart.html">Cart</a>
+      <a href="review.html">Reviews</a>
+      <a href="help.html" class="active">Help</a>
+    </nav>
+  </header>
+
+  <main class="books-page">
+    <h1>Help</h1>
+    <p>This page provides basic help information for users.</p>
+  </main>
+
+  <footer>
+    © BrightReads
+  </footer>
+
+</body>
+</html>
+
+
+/*
+  <a href="help.html">Help</a>
+  */
