@@ -7,3 +7,6 @@
 function goToBooks() {
   window.location.href = "books.html";
 }
+
+or direct 
+<a href="contact.html" class="btn primary">Contact Us</a>
