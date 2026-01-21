@@ -1,0 +1,29 @@
+<table border="1" cellpadding="6" cellspacing="0" style="margin-top:10px;">
+  <tr>
+    <th>Category</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td>Fiction</td>
+    <td>Available</td>
+  </tr>
+  <tr>
+    <td>Kids</td>
+    <td>Available</td>
+  </tr>
+</table> (error)
+
+<table style="margin-top:10px; border-collapse:collapse; width:300px;">
+  <tr>
+    <th style="border:1px solid #333; padding:6px;">Category</th>
+    <th style="border:1px solid #333; padding:6px;">Availability</th>
+  </tr>
+  <tr>
+    <td style="border:1px solid #333; padding:6px;">Fiction</td>
+    <td style="border:1px solid #333; padding:6px;">Available</td>
+  </tr>
+  <tr>
+    <td style="border:1px solid #333; padding:6px;">Kids</td>
+    <td style="border:1px solid #333; padding:6px;">Available</td>
+  </tr>
+</table>
