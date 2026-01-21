@@ -1,0 +1,47 @@
+------>
+(at up js)
+const LIMITED_BOOKS = {
+  "Harry Potter": 2,
+  "Avengers Comic": 2
+};
+(replace add to cart)
+function addToCart(name, price) {
+  const cart = loadCartFromStorage();
+
+  // Check if this book has a limit
+  if (LIMITED_BOOKS[name]) {
+    const count = cart.filter(item => item.name === name).length;
+
+    if (count >= LIMITED_BOOKS[name]) {
+      alert(`You can only add ${LIMITED_BOOKS[name]} copies of "${name}"`);
+      return;
+    }
+  }
+
+  cart.push({ name, price: Number(price) });
+  saveCartToStorage(cart);
+  updateHeaderCounts();
+  showMiniToast(`${name} added to cart`);
+}
+
+--------->for every item
+(at up)
+const MAX_COPIES_PER_BOOK = 2;
+(replace add to cart)
+function addToCart(name, price) {
+  const cart = loadCartFromStorage();
+
+  // count how many times this book already exists
+  const count = cart.filter(item => item.name === name).length;
+
+  if (count >= MAX_COPIES_PER_BOOK) {
+    alert(`You can only add ${MAX_COPIES_PER_BOOK} copies of "${name}"`);
+    return;
+  }
+
+  cart.push({ name, price: Number(price) });
+  saveCartToStorage(cart);
+  updateHeaderCounts();
+  showMiniToast(`${name} added to cart`);
+}
+
