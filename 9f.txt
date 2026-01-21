@@ -1,0 +1,64 @@
+<footer class="site-footer">
+  <div class="footer-content">
+    <h3>BrightReads</h3>
+    <p>Your trusted online bookstore for fiction, academics, kids & self-help.</p>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="cart.html">Cart</a>
+      <a href="review.html">Reviews</a>
+    </div>
+
+    <p class="copyright">
+      © <span id="year"></span> BrightReads. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+.site-footer {
+  background: linear-gradient(90deg, var(--primary), #2a8cff);
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 24px;
+  text-align: center;
+}
+
+.footer-content h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer-content p {
+  margin: 8px 0;
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.footer-links {
+  margin: 12px 0;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-content .copyright {
+  margin-top: 10px;
+  font-size: 13px;
+  opacity: 0.85;
+}
