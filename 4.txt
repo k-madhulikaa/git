@@ -1,0 +1,30 @@
+1.in review.html(update):
+
+<button class="btn primary" type="submit">Submit Review</button>
+
+<button type="button" class="btn" onclick="clearFormAndThank()">
+  Clear Form
+</button>
+
+2.in script.js(add):
+
+function clearFormAndThank() {
+  const form = document.getElementById("review-form");
+  if (!form) return;
+
+  form.reset(); // clears all form fields
+  alert("Thank you! Your form has been cleared.");
+}
+//Accesses the review form using its ID
+//Prevents errors if the function runs on another page
+//Built-in JavaScript method
+//Clears all input, select, and textarea fields
+//Shows confirmation to the user(shows thank you)
+/* working
+User clicks "Clear Form"
+        ↓
+JavaScript function runs
+        ↓
+Form fields are cleared
+        ↓
+Thank-you message is shown */

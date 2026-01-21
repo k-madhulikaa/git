@@ -1,0 +1,36 @@
+1.in review.html(add):
+<button type="button" class="btn" onclick="saveFeedbackAsTxt()">
+  Save Feedback as TXT
+</button>
+
+2.in script.js(add):
+function saveFeedbackAsTxt() {
+  const name = document.getElementById("rev-name").value.trim();
+  const email = document.getElementById("rev-email").value.trim();
+  const rating = document.getElementById("rev-rating").value;
+  const text = document.getElementById("rev-text").value.trim();
+
+  if (!name || !email || !rating || !text) {
+    alert("Please fill all feedback fields before saving.");
+    return;
+  }
+
+  const content =
+`Name: ${name}
+Email: ${email}
+Rating: ${rating}
+Feedback: ${text}
+-------------------------`;
+
+  const blob = new Blob([content], { type: "text/plain" });
+
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = "feedback.txt";
+
+  link.click();
+
+  URL.revokeObjectURL(link.href);
+
+  alert("Thank you! Feedback saved as TXT file.");
+}

@@ -1,0 +1,22 @@
+1.in script.js(update):
+function getCartTotal() {
+  const cart = loadCartFromStorage();
+
+  // original total
+  const total = cart.reduce((sum, item) => sum + Number(item.price), 0);
+
+  // apply 10% discount if total > 1000
+  if (total > 1000) {
+    const discount = total * 0.10;
+    return Math.round(total - discount);
+  }
+
+  return total;
+}
+
+TEST CASES (YOU CAN WRITE THIS)
+Cart Total	Discount	Final Amount
+₹900	No	₹900
+₹1000	No	₹1000
+₹1100	10%	₹990
+₹1500	10%	₹1350

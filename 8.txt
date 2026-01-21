@@ -1,0 +1,49 @@
+1.in index.html(add inside main near bottom):
+<section class="festival-offer">
+  <h2>About New Year Special Offers</h2>
+  <p>
+    BrightReads brings you exciting Christmas and New Year special offers to
+    celebrate the festive season. Enjoy exclusive discounts on fiction,
+    academic, kids, and self-help books. This limited-time offer is our way of
+    thanking our readers and spreading the joy of reading during the holidays.
+  </p>
+
+  <ul>
+    <li>Flat discounts on selected books</li>
+    <li>Special combo offers</li>
+    <li>Festive picks for all age groups</li>
+    <li>Valid till New Year</li>
+  </ul>
+</section>
+
+2.in index.html (add below style.css connectiom line):
+<style>
+  .festival-offer {
+    background-color: #fff7e6;
+    border-left: 6px solid #e63946;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 1100px;
+    border-radius: 10px;
+  }
+
+  .festival-offer h2 {
+    color: #b91c1c;
+    margin-bottom: 10px;
+  }
+
+  .festival-offer p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  .festival-offer ul {
+    padding-left: 20px;
+  }
+
+  .festival-offer li {
+    margin: 6px 0;
+    font-weight: 500;
+  }
+</style>

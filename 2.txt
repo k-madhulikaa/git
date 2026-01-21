@@ -1,0 +1,99 @@
+1.body{
+  margin:0;
+  font-family: "Poppins", "Segoe UI", Roboto, Arial;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color:#1f2937;
+}
+| Aspect     | Old          | New                |
+| ---------- | ------------ | ------------------ |
+| Background | Light gray   | Soft gradient      |
+| Font       | System fonts | Modern **Poppins** |
+| Text color | Dark gray    | Rich dark slate    |
+
+2. .nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background: linear-gradient(90deg, #0f172a, #1e293b);
+  padding:14px 28px;
+  letter-spacing:0.4px;
+}
+
+Dark professional navbar
+
+Increased padding → better spacing
+
+Letter spacing → cleaner typography
+
+3. .grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap:22px;
+  justify-items:center;
+}
+| Old             | New                     |
+| --------------- | ----------------------- |
+| Flex layout     | CSS Grid                |
+| Manual wrapping | Auto responsive columns |
+| Uneven spacing  | Balanced cards          |
+
+4. .card{
+  background:#ffffff;
+  width:100%;
+  border-radius:16px;
+  padding:16px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow:0 14px 30px rgba(0,0,0,0.12);
+}
+
+Larger radius → smoother cards
+
+Hover animation → interactive feel
+
+Shadow depth → elevation effect
+
+5. .btn.primary{
+  background: linear-gradient(135deg,#2563eb,#1d4ed8);
+  font-weight:600;
+  letter-spacing:0.3px;
+}
+.btn.primary:hover{
+  background: linear-gradient(135deg,#1d4ed8,#1e40af);
+}
+add on top->
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+body{
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+
+| Page    | Visual Change                    |
+| ------- | -------------------------------- |
+| Home    | Gradient background, modern hero |
+| Books   | Grid layout, animated cards      |
+| Cart    | Cleaner spacing, modern fonts    |
+| Reviews | Softer UI, readable text         |
+
+
+
+
+2----->
+.grid{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:22px;
+  justify-items:center;
+}
+
+.card{
+  background:var(--card);
+  width:100%;
+  max-width:260px;
+  border-radius:12px;
+  padding:12px;
+  box-shadow:0 8px 24px rgba(12,20,46,0.04)
+}
+

@@ -1,0 +1,41 @@
+1.in review.html add:
+
+<label>
+  Mobile Number
+  <input type="text" id="rev-mobile" required />
+</label>
+
+2.in script.js add:
+
+function validateFeedbackForm() {
+  const email = document.getElementById("rev-email").value.trim();
+  const mobile = document.getElementById("rev-mobile").value.trim();
+
+  /* Email validation */
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailPattern.test(email)) {
+    alert("Please enter a valid email address");
+    return false;
+  }
+
+  /* Mobile number validation */
+  const mobilePattern = /^[6-9]\d{9}$/;
+
+  if (!mobilePattern.test(mobile)) {
+    alert("Please enter a valid 10-digit mobile number");
+    return false;
+  }
+
+  return true;
+}
+
+How to connect this with your form (original way)
+
+In your existing form tag:
+3.in review.html add:("update")
+
+<form id="review-form" onsubmit="return validateFeedbackForm() && submitReview(event)">
+
+✔️ If validation fails → form will not submit
+✔️ If validation passes → form submits normally

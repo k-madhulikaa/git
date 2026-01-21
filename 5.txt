@@ -1,0 +1,29 @@
+1.in review.html (add after:<section>
+  <h2>All Reviews</h2>
+  <div id="reviews-list">No reviews yet.</div>
+</section> ):
+
+<button type="button" class="btn" onclick="toggleReviews()">
+  Hide / Show Reviews
+</button>
+
+2.add this function below review-related functions and above DOMComtenr Loaded(in script.js):
+function toggleReviews() {
+  const section = document.getElementById("reviews-list");
+  if (!section) return;
+
+  if (section.style.display === "none") {
+    section.style.display = "block";
+  } else {
+    section.style.display = "none";
+  }
+}
+
+🔄 HOW IT WORKS (FLOW)
+User clicks button
+        ↓
+toggleReviews() runs
+        ↓
+Checks current display style
+        ↓
+Hides or shows reviews section
