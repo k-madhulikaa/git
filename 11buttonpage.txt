@@ -1,0 +1,9 @@
+--->in html
+<button class="btn primary" onclick="goToBooks()">
+  Go to Books Page
+</button>
+
+---> in js
+function goToBooks() {
+  window.location.href = "books.html";
+}
