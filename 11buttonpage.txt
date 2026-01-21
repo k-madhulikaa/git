@@ -9,4 +9,4 @@ function goToBooks() {
 }
 
 or direct 
-<a href="contact.html" class="btn primary">Contact Us</a>
+<a href="books.html" class="btn primary">go to books</a>
