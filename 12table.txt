@@ -32,10 +32,27 @@ EXTERNAL
   font-weight: 600;
 }
            }
+----->nocss(error free)
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Availability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fiction</td>
+      <td>Available</td>
+    </tr>
+    <tr>
+      <td>Kids</td>
+      <td>Available</td>
+    </tr>
+  </tbody>
+</table>
 
-
-
-INLINE
+---->only css(with error)
 <table border="1" cellpadding="6" cellspacing="0" style="margin-top:10px;">
   <tr>
     <th>Category</th>
@@ -51,6 +68,7 @@ INLINE
   </tr>
 </table> (error)
 
+----------->INLINE css
 <table style="margin-top:10px; border-collapse:collapse; width:300px;">
   <tr>
     <th style="border:1px solid #333; padding:6px;">Category</th>
